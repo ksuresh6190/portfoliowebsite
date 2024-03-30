@@ -80,6 +80,10 @@ body {
         transform: scale(1.1);
     }
 }
+.text h3{
+    font-family:sans-serif;
+    letter-spacing: 2px;
+}
 .text h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     animation: fadeIn 1.5s infinite;
@@ -274,7 +278,7 @@ body {
     .about h2 a{
         margin-left: 20px;
         text-decoration: none;
-        color: white;
+        color: #ffffff;
     }
     .btn{
         display: block;
@@ -311,6 +315,12 @@ body {
         background-color: aqua;
         font-size: 20px;
         font-weight: 800;
+    }
+    .skills {
+        background-color: #cccccc;
+        color: #000000;
+        padding-bottom: 10%;
+        padding-top: 3%;
     }
     .navbar{
         display: flex;
