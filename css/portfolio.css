@@ -1,0 +1,311 @@
+ * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #141568;
+    color: white;
+    cursor: default;
+}
+.navbar-body {
+    background-color: transparent;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 10px;
+}
+.logo {
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.about h2 a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(210, 210, 255);
+}
+.about h2 a:hover {
+    color: aqua;
+    animation: fade 0.5s linear;
+}
+.btn {
+    display: none;
+}
+#close-btn {
+    display: none;
+}
+.container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    padding: 5%;
+}
+.img img {
+    border-radius: 50%;
+    border: 10px aqua;
+    background-position: center;
+    border-style: outset;
+    border-image-repeat:round;
+}
+.text h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeIn 1.5s infinite;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 10;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.text h2 {
+    color: aqua;
+}
+.skills {
+    background-color: #ffffff;
+    color: #000000;
+    padding-bottom: 10%;
+    padding-top: 3%;
+}
+.skills-head {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
+    padding-bottom: 3%;
+}
+.skills-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 5%;
+}
+.skills-list h1{
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: underline aqua;
+}
+.contact {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 2%;
+    padding: 10px;
+    display: block;
+    justify-content: center;
+}
+.contact h1 {
+    padding: 10px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+.contact-input {
+    width: 500px;
+    height: 600px;
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.contact-input input,textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 25px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+.submit-btn {
+    padding: 10px 20px;
+    background-color: aqua;
+    color: #000000;
+    border: 0;
+    border-radius: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 750;
+}
+.submit-btn:hover{
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg , rgb(0, 225, 255), rgb(255, 30, 105));
+    animation: fade 1s linear;
+    cursor: pointer;
+}
+.detail {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.detail h2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    padding: 5px;
+}
+
+.detail h2 a:hover {
+    
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg , rgb(0, 225, 255), rgb(255, 30, 105));
+    border-radius: 50%;
+    animation: fade 1s linear;
+    cursor: default;
+}
+
+#light-mode{
+    display: none;
+}
+#light-mode i {
+    color: aqua;
+    padding: 5px;
+}
+#dark-mode i {
+    color: aqua;
+    padding: 5px;
+}
+#dark-mode i:hover {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg , rgb(0, 225, 255), rgb(255, 30, 105));
+    border-radius: 50%;
+    animation: fade 1s linear;
+    cursor: default;
+}
+#light-mode i:hover {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg , rgb(0, 225, 255), rgb(255, 30, 105));
+    border-radius: 50%;
+    animation: fade 1s linear;
+    cursor: default;
+}
+@keyframes fade{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 5;
+    }
+    100%{
+        opacity: 25;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-color: aliceblue;
+        color: #000;
+    }
+    .about h2 a{
+        margin-left: 30px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .container{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 10px;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        background-color: #141568;
+        color: #ffffff;
+        display: grid;
+    }
+    .about{
+        display: none;
+        justify-content: space-between;
+    }
+    .about h2 a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+    }
+    .btn{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #button {
+        display: block;
+        padding: 5px 10px;
+        border: 0;
+        border-radius: 10px;
+        color: black;
+        background-color: aqua;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .detail{
+        margin-top: 8%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    
+    }
+    #close-btn{
+        display: none;
+    }
+    #close-btn{
+        padding: 5px 10px;
+        border: 0;
+        border-radius: 10px;
+        color: black;
+        background-color: aqua;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .navbar{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px;
+        margin-right: 20px;
+    }
+}

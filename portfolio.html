@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suresh ♥</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body id="body">
+    <div class="navbar-body">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SURESH</h1>
+            </div>
+            <div id="about-tag" class="about">
+                <h2><a href="#" id="light-mode" onclick="light_mode()"><i class='bx bx-sun'></i></a></h2>
+                <h2><a href="#" id="dark-mode" onclick="dark_mode()"><i class='bx bx-moon'></i></a></h2>
+                <h2 id="about-tag"><a href="#about">About</a></h2>
+                <h2 id="about-tag"><a href="#skills">Skills</a></h2>
+                <h2 id="about-tag"><a href="#contact">Contact</a></h2>
+            </div>
+            <div class="btn">
+                <button type="button" id="button" onclick="menutag()"><i class='bx bx-menu'></i></button>
+                <button type="button" id="close-btn" onclick="closetag()"><i class='bx bx-x'></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="container" id="about">
+        <div class="img">
+            <img src="photos/1711715994122.jpg" alt="suresh image"  width="370px" height="340px" title="suresh image">
+        </div>
+        <div class="text">
+            <h1><b>Hi, I'm SURESH</b></h1>
+            <h2><b>front-end developer</b></h2><br>
+            <h3>I'm suresh front-end developer. studying in 1st year UG Degree Bsc(AI & ML).</h3>
+            <h3>From Thiruvarur, SDC manjakkudi, Bharathidhasan University.</h3>
+            <div class="detail">
+                <h2><a href="https://www.instagram.com/raghuvaran_345?igsh=MXYwM2UwN3FnZDlmZA==" target="_blank"><i class='bx bxl-instagram'></i></a></h2>
+                <h2><a href="https://www.linkedin.com/in/suresh-k-1665592ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin' ></i></a></h2>
+                <h2><a href="mailto:ksuresh61906190@gmail.com"><i class='bx bx-envelope' ></i></a></h2>
+                <h2><a href="www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a></h2>
+            </div>
+        </div>
+       
+    </div>
+    <div class="skills" id="skills">
+        <div class="skills-head">
+            <h1>skills</h1>
+        </div><hr>
+        <div class="skills-list">
+            <h1><img src="photos/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon.png" alt="html" width="150px" height="150px" title="HTML">HTML</h1>
+            <h1><img src="photos/1711701542670.jpg" alt="css" width="150px" height="150px" title="CSS">CSS</h1>
+            <h1><img src="photos/1711701626875.jpg" alt="js" width="150px" height="150px" title="JAVASCRIPT">JS</h1>
+            <h1><img src="photos/9bb722f0e85ddbc1ce0f064534fd2311-python-programming-language-icon-by-vexels.png" alt="python" width="150px" height="150px" title="PYTHON">PYTHON</h1>
+            <h1><img src="photos/1711701704877.jpg" alt="mysql" width="200px" height="150px" title="MYSQL">MYSQL</h1>
+            <h1><img src="photos/th.png" alt="bootstrap" width="200px" height="150px" title="BOOTSTRAP">BOOTSTRAP</h1>
+            
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1>Contact Me!</h1><hr>
+            <form  method="post">
+                <div class="contact-input">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name">
+                    <input type="email" placeholder="Email" required>
+                    <input type="number" placeholder="Mobile Number" required>
+                    <textarea name="" id="" cols="10" rows="10" placeholder="feed back" required></textarea>
+                    <br><button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+
+            <div class="detail">
+                <h2><a href="https://www.instagram.com/raghuvaran_345?igsh=MXYwM2UwN3FnZDlmZA==" target="_blank"><i class='bx bxl-instagram'></i></a></h2>
+                <h2><a href="#www.linkedin.com"><i class='bx bxl-linkedin' ></i></a></h2>
+                <h2><a href="mailto:ksuresh61906190@gmail.com"><i class='bx bx-envelope' ></i></a></h2>
+                <h2><a href="www.facebook.com"><i class='bx bxl-facebook'></i></a></h2>
+            </div>
+    </div>
+
+</body>
+<script src="js/portfolio.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
