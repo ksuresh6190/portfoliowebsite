@@ -68,6 +68,18 @@ body {
     border-style: outset;
     border-image-repeat:round;
 }
+.img img:hover {
+    animation: zoom 1.5s normal;
+    transform: scale(1.1);
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
 .text h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     animation: fadeIn 1.5s infinite;
