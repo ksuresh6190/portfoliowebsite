@@ -22,7 +22,7 @@ function light_mode(){
     
 }
 function dark_mode(){
-    body.style.backgroundColor = "#141414";
+    body.style.backgroundColor = "#494949";
     body.style.color = "white";
     light.style.display = "flex";
     dark.style.display = "none";
