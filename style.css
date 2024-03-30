@@ -133,7 +133,6 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
-    text-decoration: underline aqua;
 }
 .contact {
     text-align: center;
@@ -267,9 +266,19 @@ body {
 
 @media screen and (max-width: 425px) {
     body{
-        background-color: #141568;
-        color: #ffffff;
+        background-color: aliceblue;
+        color: #000000;
         display: grid;
+    }
+    .logo {
+        background: linear-gradient(45deg , rgb(0, 225, 255), rgb(255, 30, 105));
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        margin-left: 20px;
     }
     .about{
         display: none;
@@ -278,7 +287,7 @@ body {
     .about h2 a{
         margin-left: 20px;
         text-decoration: none;
-        color: #ffffff;
+        color: #000000;
     }
     .btn{
         display: block;
@@ -303,6 +312,13 @@ body {
         align-items: center;
         gap: 30px;
     
+    }
+    .detail h2 a {
+        color: rgb(0, 0, 0);
+        background: linear-gradient(45deg , rgb(0, 225, 255), rgb(255, 30, 105));
+        border-radius: 50%;
+        animation: fade 1s linear;
+        cursor: default;
     }
     #close-btn{
         display: none;
