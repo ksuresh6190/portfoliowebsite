@@ -27,3 +27,19 @@ function dark_mode(){
     light.style.display = "flex";
     dark.style.display = "none";
 }
+document.getElementById("contact-form").addEventListener("submit", function(event){
+    event.preventDefault();
+    var data = new FormData(event.target);
+    fetch("https://formspree.io/f/mdoqpojd", {
+        method: "POST",
+        body: data,
+    }).then(response => {
+        if (response.ok){
+            alert("Success!");
+        }
+        else{
+            alert("Error!");
+        }
+    });
+    document.getElementById("contact-form").reset();
+})
