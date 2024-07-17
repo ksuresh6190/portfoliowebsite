@@ -17,7 +17,8 @@
                 <h2><a href="#" id="light-mode" onclick="light_mode()"><i class='bx bx-sun'></i></a></h2>
                 <h2><a href="#" id="dark-mode" onclick="dark_mode()"><i class='bx bx-moon'></i></a></h2>
                 <h2><a href="#about">About</a></h2>
-                <h2><a href="#skills">Skills</a></h2>
+                <h2><a href="#skills">Skill</a></h2>
+                <h2><a href="#project">Projects</a></h2>
                 <h2><a href="#contact">Contact</a></h2>
             </div>
             <div class="btn">
@@ -28,7 +29,7 @@
     </div>
     <div class="container" id="about">
         <div class="img">
-            <img src="photos/IMG20230917114051.jpg" alt="suresh image"  width="370px" height="340px" title="suresh image">
+            <img src="photos/suresh.jpg" alt="suresh image"  width="360px" height="340px" title="suresh image">
         </div>
         <div class="text">
             <h1><b>Hi, I'm SURESH</b></h1>
@@ -49,25 +50,55 @@
             <h1>skills</h1>
         </div><hr>
         <div class="skills-list">
-            <h1><img src="photos/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon.png" alt="html" width="150px" height="150px" title="HTML">HTML</h1>
-            <h1><img src="photos/1711701542670.jpg" alt="css" width="150px" height="150px" title="CSS">CSS</h1>
-            <h1><img src="photos/1711701626875.jpg" alt="js" width="150px" height="150px" title="JAVASCRIPT">JS</h1>
-            <h1><img src="photos/9bb722f0e85ddbc1ce0f064534fd2311-python-programming-language-icon-by-vexels.png" alt="python" width="150px" height="150px" title="PYTHON">PYTHON</h1>
-            <h1><img src="photos/1711701704877.jpg" alt="mysql" width="200px" height="150px" title="MYSQL">MYSQL</h1>
-            <h1><img src="photos/th.png" alt="bootstrap" width="200px" height="150px" title="BOOTSTRAP">BOOTSTRAP</h1>
-            <h1><img src="photos/git-logo.png" alt="git" width="200px" height="150px" title="GIT">GIT</h1>
-            <h1><img src="photos/GitHub-Logo.png" alt="github" width="200px" height="150px" title="GITHUB">GITHUB</h1>      
+            <div class="item-1">
+                <h2>html</h2>
+                <i class="bx bxl-html5"></i>
+              </div>
+              <div class="item-2">
+                <h2>css</h2>
+                <i class="bx bxl-css3"></i>
+              </div>
+              <div class="item-3">
+                <h2>javascript</h2>
+                <i class="bx bxl-javascript"></i>
+              </div>
+              <div class="item-4">
+                <h2>Python</h2>
+                <i class="bx bxl-python"></i>
+              </div>
+              <div class="item-5">
+                <h2>boostrap</h2>
+                <i class="bx bxl-bootstrap"></i>
+              </div>
+              <div class="item-5">
+                <h2>github</h2>
+                <i class="bx bxl-github"></i>
+              </div>      
         </div>
+    </div>
+    <div id="project">
+        <div class="project-title">Projects</div>
+        <div class="projects-lists">
+            <div class="proj1 proj"><a href="https://ksuresh6190.github.io/Restaurant/">Restaurant</a></div>
+            <div class="proj2 proj"><a href="#">! ToDo List</a></div>
+            <div class="proj3 proj"><a href="#">! Calculator</a></div>
+            <div class="proj4 proj"><a href="#">! Weather</a></div>
+            <div class="proj5 proj"><a href="#">! Clone</a></div>
+        </div>
+        
     </div>
     <div class="contact" id="contact">
         <h1>Contact Me!</h1><hr>
             <form id="contact-form">
                 <div class="contact-input">
-                    <input type="text" placeholder="First name" name="name" required>
-                    <input type="text" placeholder="Last name" name="name">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Name" name="name" required>
+                    <label for="email">E-mail</label>
                     <input type="email" placeholder="Email" name="email" required>
+                    <label for="mobile number">Mobile Number</label>
                     <input type="number" placeholder="Mobile Number" name="mobile number" required>
-                    <textarea name="message" id="textarea" cols="10" rows="10" placeholder="message" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="textarea" cols="10" rows="10" placeholder="Message" required></textarea>
                     <br><button type="submit" class="submit-btn">Submit</button>
                 </div>
             </form>

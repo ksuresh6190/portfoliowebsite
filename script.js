@@ -13,17 +13,27 @@ function closetag(){
 }
 var light = document.getElementById("light-mode");
 var body = document.getElementById("body");
+var skill = document.getElementById("skills");
+var project = document.getElementById("project");
 var dark = document.getElementById("dark-mode");
 function light_mode(){
     light.style.display = "none";
-    body.style.backgroundColor = "";
-    body.style.color = "";
+    skill.style.background = "linear-gradient(360deg,rgb(36, 141, 173),rgb(36, 141, 173))";
+    skill.style.color = "black";
+    body.style.background = "linear-gradient(75deg,rgb(36, 141, 173),rgb(36, 141, 173))";
+    body.style.color = "black";
+    project.style.background =  "linear-gradient(180deg,rgb(36, 141, 173),rgb(36, 141, 173))";
+    project.style.color = "black";
     dark.style.display = "flex";
     
 }
 function dark_mode(){
-    body.style.backgroundColor = "#494949";
+    body.style.background = "";
     body.style.color = "white";
+    project.style.background =  "";
+    project.style.color = "white";
+    skill.style.background = "";
+    skill.style.color = "white";
     light.style.display = "flex";
     dark.style.display = "none";
 }
