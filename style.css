@@ -517,6 +517,7 @@ textarea {
   .skills-list {
     display: flex;
     justify-content: space-evenly;
+    gap: 40px 15px;
   }
   .skills-list .item-1,
 .item-2,
@@ -525,7 +526,7 @@ textarea {
 .item-5 {
   display: grid;
   justify-items: center;
-  gap: 40px;
+  gap: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
@@ -576,7 +577,7 @@ textarea {
   }
   .contact h1 {
     padding: 10px;
-    color: aqua;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: bold;
@@ -603,5 +604,9 @@ textarea {
     color: rgb(0, 0, 0);
     background: linear-gradient(45deg, rgb(0, 225, 255), rgb(255, 30, 105));
     box-shadow: 0px 0px 18px rgb(0, 225, 255);
+  }
+  .contact{
+    position: relative;
+    background-color: rgb(0, 0, 10);
   }
 }
